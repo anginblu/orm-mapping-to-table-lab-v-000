@@ -13,6 +13,9 @@ class Student
     @@all << self
   end
 
+  def self.create_table
+    
+
   def
 
 end
