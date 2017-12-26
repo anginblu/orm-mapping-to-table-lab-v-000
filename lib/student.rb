@@ -42,10 +42,7 @@ class Student
   end
 
   def self.create(name:, grade:)
-    sql = <<-SQL
-      SELECT id FROM students WHERE name = ?
-    SQL
-    DB[:conn].execute(sql, self.name, self.grade)
+    self.new(name)
 
   end
 
