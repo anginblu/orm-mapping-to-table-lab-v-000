@@ -42,8 +42,7 @@ class Student
 
   def self.create(name:, grade:)
     sql = <<-SQL
-      SELECT  FROM students (name, grade)
-      VALUES (?, ?)
+      SELECT  FROM students 
     SQL
 
   end
